@@ -4,6 +4,8 @@ import Header from './components/Header'
 import GlobalStyles from './styles/global'
 import light from './styles/themes/light'
 import dark from './styles/themes/dark'
+import Button from '@material-ui/core/Button';
+
 
 const App = () => {
   const [theme, setTheme] = useState(light)
@@ -16,6 +18,9 @@ const App = () => {
     <div className="App">
       <GlobalStyles />
       <Header toggleTheme={toggleTheme} />
+      <Button variant="contained" color="primary">
+      Hello World
+    </Button>
     </div>
     </ThemeProvider>
   );

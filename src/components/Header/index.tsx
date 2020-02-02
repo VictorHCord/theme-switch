@@ -12,7 +12,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
   const { colors, title } = useContext(ThemeContext)
   return (
     <Container>
-      Hellow brow
+      Colocar uma logo
       <Switch 
       checked={title === 'dark' }
       onChange={toggleTheme}
@@ -22,7 +22,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
       width={40}
       handleDiameter={20}
       offColor={shade(0.15 , colors.primary)}
-      onColor={colors.secundary}
+      onColor={shade(0.15, colors.secundary)}
       />
     </Container>
   )
